@@ -81,3 +81,14 @@ systemctl list-units 'snap.microk8s.*' --no-pager
 microk8s enable dashboard dns registry metrics-server
 
 kubectl get pods --namespace kube-system
+
+#### Получить информацию о Pod'е
+kubectl describe pod my-pod -n my-namespace
+
+#### Определить, что он принадлежит Deployment
+#### ... (вывод команды покажет, что он принадлежит Deployment) ...
+
+#### Удалить Deployment
+kubectl delete deployment my-deployment -n my-namespace
+
+
