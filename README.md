@@ -91,4 +91,5 @@ kubectl describe pod my-pod -n my-namespace
 #### Удалить Deployment
 kubectl delete deployment my-deployment -n my-namespace
 
+kubectl get services
 
